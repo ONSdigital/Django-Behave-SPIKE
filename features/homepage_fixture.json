@@ -1,0 +1,11 @@
+[
+{
+  "model": "onsApp.homepage",
+  "pk": 1,
+  "fields": {
+    "title": "ONS Static Site Template",
+    "hero_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare nisl ac dolor dapibus, non mattis sapien egestas.",
+    "hero_button_text": "Go to page 1"
+  }
+}
+]
