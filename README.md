@@ -26,6 +26,12 @@ To Install The Dependencies
 poetry install
 ```
 
+To Load The ONS Design System Components
+
+```bash
+./load-design-system-templates.sh
+```
+
 To Run The Local Dev Env Server: This can be useful if you want to spin up the local dev env server and tweak the step definitions in `steps.py` to hit the local dev env server when you run the Behave tests using `python manage.py behave` to see the tests working/ mock the behaviour without using the Django Test Client. This can be useful to see visually what should be happening when the tests are run.
 
 ```bash
