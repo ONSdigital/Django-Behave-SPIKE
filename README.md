@@ -20,10 +20,18 @@ This project was created to validate some issues around creating BDD UI tests us
 
 ## To Run The Project and BDD Tests
 
+Make sure to have Python version 3.11^ or the latest Python version installed.
+
 To Install The Dependencies
 
 ```bash
 poetry install
+```
+
+To Load The ONS Design System Components
+
+```bash
+./load-design-system-templates.sh
 ```
 
 To Run The Local Dev Env Server: This can be useful if you want to spin up the local dev env server and tweak the step definitions in `steps.py` to hit the local dev env server when you run the Behave tests using `python manage.py behave` to see the tests working/ mock the behaviour without using the Django Test Client. This can be useful to see visually what should be happening when the tests are run.
@@ -33,7 +41,6 @@ python manage.py runserver
 ```
 
 To Run The Behave Tests Correctly Using Django's Test Client: Make sure to have configured the step definitions in `steps.py` to use the Django Test Client instead of the local dev env server.
-
 
 ```bash
 python manage.py behave
