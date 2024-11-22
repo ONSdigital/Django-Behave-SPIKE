@@ -20,6 +20,8 @@ This project was created to validate some issues around creating BDD UI tests us
 
 ## To Run The Project and BDD Tests
 
+Make sure to have Python version 3.11^ or the latest Python version installed.
+
 To Install The Dependencies
 
 ```bash
@@ -39,7 +41,6 @@ python manage.py runserver
 ```
 
 To Run The Behave Tests Correctly Using Django's Test Client: Make sure to have configured the step definitions in `steps.py` to use the Django Test Client instead of the local dev env server.
-
 
 ```bash
 python manage.py behave
