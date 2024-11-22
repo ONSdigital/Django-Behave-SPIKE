@@ -32,7 +32,8 @@ To Run The Local Dev Env Server: This can be useful if you want to spin up the l
 python manage.py runserver
 ```
 
-To Run The Behave Tests Correctly: Make sure to have configured the step definitions in `steps.py` to use the Django Test Client instead of the local dev env server.
+To Run The Behave Tests Correctly Using Django's Test Client: Make sure to have configured the step definitions in `steps.py` to use the Django Test Client instead of the local dev env server.
+
 
 ```bash
 python manage.py behave
