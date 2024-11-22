@@ -6,7 +6,7 @@ This project was created to validate some issues around creating BDD UI tests us
 
 - The main issue experienced during the development of the BDD UI tests using Behave and Django was the data in the database was getting flushed in between scenarios.
 - This was not ideal as when the first scenario runs, everything will work as expected and then subsequent scenario will fail due to the flushing take place after the first scenario.
-- This issue and other minor issues will be documented further in the docs in the [dis-wagtail](https://github.com/ONSdigital/dis-wagtail) repo.
+- This issue and other issues will be documented further in the docs in the [dis-wagtail](https://github.com/ONSdigital/dis-wagtail) repo.
 
 ## Links to Django Docs That Validate The Issues Experienced With Behave and Playwright
 
@@ -26,13 +26,13 @@ To Install The Dependencies
 poetry install
 ```
 
-To Run The Local Dev Server: This can be useful where you can spin up the local dev server and tweak the step definitions in `steps.py` to hit the local dev env server when you run the Behave tests `python manage.py behave` to see the tests working/ mock the behaviour without using the Django Test Client.
+To Run The Local Dev Env Server: This can be useful if you want to spin up the local dev env server and tweak the step definitions in `steps.py` to hit the local dev env server when you run the Behave tests using `python manage.py behave` to see the tests working/ mock the behaviour without using the Django Test Client. This can be useful to see visually what should be happening when the tests are run.
 
 ```bash
 python manage.py runserver
 ```
 
-To Run The Behave Tests: Make sure if to have configured the step definitions in `steps.py` to use the Django Test Client instead of the local dev env server.
+To Run The Behave Tests Correctly: Make sure to have configured the step definitions in `steps.py` to use the Django Test Client instead of the local dev env server.
 
 ```bash
 python manage.py behave
