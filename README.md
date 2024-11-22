@@ -19,4 +19,3 @@ This project was created to validate some issues around creating BDD UI tests us
 - [Django Advanced Testing](https://docs.djangoproject.com/en/5.1/topics/testing/advanced/)
 
 ## To Run The Project and BDD Tests
-
