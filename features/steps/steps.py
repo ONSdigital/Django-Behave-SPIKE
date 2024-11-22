@@ -9,10 +9,10 @@ BASE_URL = "http://localhost:8000"
 
 @when("An external user navigates to the ONS website")
 def external_user_navigates_to_homepage(context):
-    context.page.goto(
-        BASE_URL
-    )  # You can uncomment this line if you want to see the expected behaviour by hitting the local server URL
-    # context.page.goto(context.base_url)  # This line will hit the django test client URL, you can comment this if using the above line
+    # context.page.goto(
+    #     BASE_URL
+    # )  # You can uncomment this line if you want to see the expected behaviour by hitting the local server URL
+    context.page.goto(context.base_url)  # This line will hit the django test client URL, you can comment this if using the above line
 
 
 @then("they can see the title ONS Static Site Template")
@@ -35,10 +35,10 @@ def user_sees_the_homepage_hero_text(context):
 
 @then("they click on the Cookies link")
 def user_navigates_to_the_cookies_link(context):
-    context.page.goto(
-        BASE_URL
-    )  # You can uncomment this line if you want to see the expected behaviour by hitting the local server URL
-    # context.page.goto(context.base_url)  # This line will hit the django test client URL, you can comment this if using the above line
+    # context.page.goto(
+    #     BASE_URL
+    # )  # You can uncomment this line if you want to see the expected behaviour by hitting the local server URL
+    context.page.goto(context.base_url)  # This line will hit the django test client URL, you can comment this if using the above line
     context.page.get_by_role("link", name="Cookies", exact=True).click()
 
 
