@@ -19,3 +19,21 @@ This project was created to validate some issues around creating BDD UI tests us
 - [Django Advanced Testing](https://docs.djangoproject.com/en/5.1/topics/testing/advanced/)
 
 ## To Run The Project and BDD Tests
+
+To Install The Dependencies
+
+```bash
+poetry install
+```
+
+To Run The Local Dev Server: This can be useful where you can spin up the local dev server and tweak the step definitions in `steps.py` to hit the local dev env server when you run the Behave tests `python manage.py behave` to see the tests working/ mock the behaviour without using the Django Test Client.
+
+```bash
+python manage.py runserver
+```
+
+To Run The Behave Tests: Make sure if to have configured the step definitions in `steps.py` to use the Django Test Client instead of the local dev env server.
+
+```bash
+python manage.py behave
+```
